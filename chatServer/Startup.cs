@@ -43,7 +43,7 @@ namespace chatServer
                 options.AddPolicy("Client", policy =>
                 {
                     policy.AllowAnyHeader().AllowAnyMethod()
-                        .WithOrigins("https://brpchat-front.herokuapp.com/",
+                        .WithOrigins("https://brpchat-front.herokuapp.com",
                                      "https://brpchat-front.herokuapp.com/chat")
                         .AllowCredentials();
                 });
