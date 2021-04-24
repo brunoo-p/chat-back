@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Chat.Infrastructure.Entities;
 using Chat.Infrastructure.Interface;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chat.Application.Controllers
@@ -16,6 +17,7 @@ namespace Chat.Application.Controllers
             _repository = repository;
         }
 
+        [EnableCors("Client")]
         [HttpPost]
         public ActionResult<User> addUser(User newUser)
         {
@@ -35,6 +37,7 @@ namespace Chat.Application.Controllers
             }
         }
 
+        [EnableCors("Client")]
         [HttpPost]
         [Route("login")]
         public ActionResult<User> login(string nickname, string password)
