@@ -1,50 +1,36 @@
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using Chat.Infrastructure.Entities;
 using Chat.Infrastructure.Interface;
-using chatServer.Infrastructure.Database;
-using MongoDB.Driver;
+
 
 namespace Chat.Domain.Repositories
 {
     public class UserRepository : IUser
     {
-        DbConnection _mongoDB;
-        IMongoCollection<User> _userConllection;
-        public UserRepository(DbConnection connection)
-        {
-            _mongoDB = connection;
-            _userConllection = _mongoDB.database.GetCollection<User>("User");
-        }
+        List<User> list = new List<User>(); 
         public User addUser(User user)
         {
-            try{
-                var newUser = new User(
-                    user.Name,
-                    user.Nickname,
-                    user.Password
-                );
+            var isExist = login(user.Nickname, user.Password);
 
-                _userConllection.InsertOneAsync(newUser);
-
-                newUser.Password = "*";
-                return newUser;
-            }catch
-            {
+            if(isExist != null){
                 return null;
             }
+    
+            list.Add(user);
+            return user;
         }
 
         public User login(string nickname, string password)
         {
-            var user = _userConllection.Find(Builders<User>.Filter
-            .Where(_ => _.Nickname == nickname && _.Password == password));
-
-            if(user == null)
+            User finded = null;
+            foreach (var user in list)
             {
-                return null;
+                if(user.Nickname == nickname && user.Password == password){
+                    finded = user;
+                }
             }
-            
-            return (User)user;
+
+            return finded;
         }
     }
 }

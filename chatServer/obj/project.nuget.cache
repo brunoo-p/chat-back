@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LfPLm22ZS1LUVE404VZJevhiWrnLWO/PyXjPjtk9y3dobJ/Vgjaw8UVTULxg7feYknCJEAyFEWZQRA6BLhimbA==",
+  "dgSpecHash": "ss8ZYLIjyiqvLcq6S7AtYXr5u4T8cyN6kbRbtf98aMmra+p0A4tHmFzgYZcE24wI3LrkfAj9A+RWnIuyBZTZ7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\chatServer.csproj",
+  "projectFilePath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\chatServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruno\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

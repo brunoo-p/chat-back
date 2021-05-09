@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\chatServer.csproj": {}
+    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\chatServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\chatServer.csproj": {
+    "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\chatServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\chatServer.csproj",
+        "projectUniqueName": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\chatServer.csproj",
         "projectName": "chatServer",
-        "projectPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\chatServer.csproj",
+        "projectPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\chatServer.csproj",
         "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\back\\chatServer\\obj\\",
+        "outputPath": "C:\\Users\\bruno\\OneDrive\\Área de Trabalho\\Heroku\\ChatApp\\back\\chatServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",

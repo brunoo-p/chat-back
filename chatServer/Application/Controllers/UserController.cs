@@ -23,10 +23,10 @@ namespace Chat.Application.Controllers
         {
             try{
 
-                var user =  _repository.addUser(newUser);
+                var user = _repository.addUser(newUser);
 
                 if(user == null){
-                    return StatusCode(203, "Erro ao cadastrar usuário.");
+                    return StatusCode(203, "Este usuário ja está sendo usado.");
                 }
 
                 return StatusCode(200, user);
