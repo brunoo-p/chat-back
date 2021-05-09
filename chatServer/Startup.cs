@@ -44,7 +44,8 @@ namespace chatServer
                 {
                     policy.AllowAnyHeader().AllowAnyMethod()
                         .WithOrigins("https://brpchat-front.herokuapp.com",
-                                     "https://brpchat-front.herokuapp.com/chat")
+                                     "https://brpchat-front.herokuapp.com/chat",
+                                     "https://brpchat-front.herokuapp.com/user")
                         .AllowCredentials();
                 });
             });
