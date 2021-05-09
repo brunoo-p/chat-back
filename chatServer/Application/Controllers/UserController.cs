@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Chat.Application.Controllers
 {   
+    [EnableCors("Client")]
     [ApiController]
     [Route("[controller]")]
     public class UserController : Controller
