@@ -7,5 +7,6 @@ namespace Chat.Infrastructure.Entities
     {
         public string User { get; set; }
         public string Message { get; set; }
+        public string Date { get; set; }
     }
 }
