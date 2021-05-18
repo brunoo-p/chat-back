@@ -42,10 +42,9 @@ namespace chatServer
             services.AddCors(options => {
                 options.AddPolicy("Client", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod()
+                    policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials()
                         .WithOrigins("https://brpchat-front.herokuapp.com",
-                                     "https://brpchat-front.herokuapp.com/chat")
-                        .AllowCredentials();
+                                     "https://brpchat-front.herokuapp.com/chat");
                 });
             });
 
